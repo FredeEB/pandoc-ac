@@ -2,7 +2,7 @@
 authors = ["Eduardo Pinho <enet4mikeenet@gmail.com>"]
 edition = "2018"
 name = "pandoc-ac"
-version = "0.2.1-alpha.0"
+version = "0.2.1-alpha.1"
 description = "A simple pandoc filter for converting acronym codes to LaTeX"
 repository = "https://github.com/Enet4/pandoc-ac"
 keywords = ["pandoc", "pandoc-filter", "acronym"]
@@ -21,7 +21,8 @@ doc = false
 
 [dependencies]
 failure = "0.1.5"
-pandoc_ast = "0.7.2"
+#pandoc_ast = "0.7.2"
+pandoc_ast = { git = "https://github.com/thor/pandoc-ast" }
 regex = "1.1.0"
 lazy_static = "1.2.0"
 
